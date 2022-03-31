@@ -1,0 +1,24 @@
+body{
+
+}
+
+/* navigation bar with logo */
+.navbar{
+    background-color: black;
+}
+/* base navigation bar dropdown for category navigation */
+.base-nav{
+    background-color: #28a745;
+    margin-top:70px ;
+  }
+.base-nav a{
+    color: black;
+  }
+
+.footer{
+    background-color: #232F3E;
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
