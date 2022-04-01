@@ -1,0 +1,20 @@
+body{
+    background-color: #121212;
+}
+.logo-container-div{
+    margin-bottom: 50px;
+}
+.customer-signup-form-div{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.create-new-account-btn{
+    background-color:#4CAF50 ;
+    color: black;
+}
+.create-new-account-btn:hover{
+    background-color: white;
+    color: black
+    
+}
