@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style/cust_reg_form.css' %}">
+    <title>Farmcorps signin</title>
+</head>
+<body>
+    <!-- row containing logo -->
+    <div class="container-fluid logo-container-div">
+        <div class="row">
+            <div class="col-2 d-flex justify-content-center container-fluid">
+                <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" width="250" height="100" alt="farmcorps logo"></a>
+            </div>
+        </div>
+    </div>
+
+     <!-- customer registration form -->
+     <div class="container customer-signup-form-div">
+        <!-- row containinig form items -->
+          <div class="row d-flex cotainer justify-content-center">
+            <!-- dummy div for alining form to center  -->
+              <div class="col-3"></div>
+              <form class="col-6">
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" id="inputEmail1">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="policyAgreementCheck" required>
+                        <label class="form-check-label"> By continuing, you agree to Farmcorps's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</label>
+                    </div>
+                   <!-- button as a seperate row to position at center -->
+                  <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-success">Sign up</button>
+                  </div>
+              </form>
+                  
+              <!-- dummy div for alining form to center  -->
+              <div class="col-3"></div>
+          </div>
+      </div>
+       <!-- customer registration form -->
+       <!-- customer sign up link -->
+       <div><p align="center" style="color:white;font-family:Verdana, Geneva, Tahoma, sans-serif">New to farmcorps?</p></div>
+       <div class="row justify-content-center">
+        <a href="{% url 'signup' %}"><button type="submit" class="btn col-12 create-new-account-btn">Create your farmcorps account</button></a>
+      </div>
+</body>
+</html>

@@ -3,3 +3,9 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,'index.html')
+
+def signup(request):
+    return render(request,'customer_signup.html')
+
+def signin(request):
+    return render(request,'customer_signin.html')
