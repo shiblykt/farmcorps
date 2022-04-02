@@ -9,6 +9,7 @@ h3{
     text-align: center;
     color:#404149;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
   }
 h5{
     text-align: center;
@@ -37,4 +38,8 @@ h5{
 .grid-item img:hover{
     opacity: 1;
     border-radius: 10px;
+  }
+  .suggestions-grid{
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
