@@ -25,7 +25,7 @@
      <!-- customer registration form -->
      <div class="container customer-signup-form-div">
         <!-- row containinig form items -->
-          <div class="row d-flex cotainer justify-content-center">
+          <div class="row d-flex cotainer justify-content-center container-fluid">
             <!-- dummy div for alining form to center  -->
               <div class="col-3"></div>
               <form class="col-6">
@@ -37,18 +37,13 @@
                         <label>Password</label>
                         <input type="password" class="form-control" id="inputPassword">
                     </div>
-                    <div class="form-group form-check">
-                        <div class="row">
-                            <div class="col-8 col-sm-8">
+                    <div class="form-group form-check">      
                                 <input type="checkbox" class="form-check-input" id="policyAgreementCheck">
-                                <label class="form-check-label">Remember me</label></div>
+                                <label class="form-check-label">Remember me</label>
                            
-                                <div class="d-flex justify-content-end">
+                                <!-- <div class=" col-6 d-flex justify-content-end">
                                     <label class="form-check-label"><a href="#">Forgot password</a></label>
-                                </div>
-                            </div>
-                            
-                        
+                                </div> --> 
                     </div>
                     
                    <!-- button as a seperate row to position at center -->
@@ -64,7 +59,7 @@
        <!-- customer registration form -->
        <!-- customer sign up link -->
        <div><p align="center" style="color:white;font-family:Verdana, Geneva, Tahoma, sans-serif">New to farmcorps?</p></div>
-       <div class="row justify-content-center">
+       <div class="d-flex justify-content-center">
         <a href="{% url 'signup' %}"><button type="submit" class="btn col-12 create-new-account-btn">Create your farmcorps account</button></a>
       </div>
 </body>
