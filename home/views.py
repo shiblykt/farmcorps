@@ -9,3 +9,6 @@ def signup(request):
 
 def signin(request):
     return render(request,'customer_signin.html')
+
+def forgotpassword(request):
+    return render(request,'forgot_password.html')
