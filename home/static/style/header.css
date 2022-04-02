@@ -22,3 +22,15 @@ body{
     padding-right: 15px;
    
 }
+.nav-item a{
+  text-decoration: none;
+  color:black;
+}
+
+.nav-item a:hover{
+  text-decoration: none;
+  color:black;
+}
+.nav{
+  background-color: #28a745;
+}
