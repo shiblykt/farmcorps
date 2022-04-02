@@ -7,9 +7,12 @@
 /* grid headings */
 h3{
     text-align: center;
+    color:#404149;
+    font-family: Arial, Helvetica, sans-serif;
   }
 h5{
     text-align: center;
+    color:#666a6d;
   }
 
 /* grid container */
