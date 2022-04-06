@@ -1,0 +1,44 @@
+.breadcrumb a{
+    color: #afacac;
+    /* font-size: 11px; */
+    text-decoration: none;
+}
+.breadcrumb{
+    background-color: white;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.store-heading h2{
+    color: #5d5d5d;
+
+}
+.store-heading{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.sort-div{
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+}
+.breadcrumb-container{
+    margin-bottom: 0;
+}
+.refine-container a{
+    text-decoration: none;
+    color: #000;
+}
+.card{
+border: 0px;
+padding-left: 15px;
+}
+.category-card-body{
+    padding-left: 50px;
+}
+
+.form-div{
+    margin: 0px;
+    padding: 0px;
+}
