@@ -1,0 +1,119 @@
+{% extends 'customer/customer_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/store.css' %}">
+<div class="container breadcrumb-container">
+    <div class="row">
+        <div class="col-md">  
+            <!-- breadcumb   -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb store-breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Vegetables</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Items</li>
+            </ol>
+          </nav>
+            <!-- breadcumb   -->
+          <!-- filter section -->
+
+          <!-- filter section -->
+    </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row  refine-container">
+        <!-- left section -->
+        <div class="col-md-3">  
+               
+              <!-- filter section -->
+                <a data-toggle="collapse" href="#refineCollapse" role="button" aria-expanded="false" aria-controls="refineCollapse">
+                    <h4><i class="fa fa-angle-down" style="font-size:30px"></i> Refine by</h4>
+                </a>
+                <div class="collapse" id="refineCollapse">
+                    <div class="card card-body">
+                        <a data-toggle="collapse" href="#categoryCollapse" role="button" aria-expanded="false" aria-controls="categoryCollapse">
+                            <i class="fa fa-plus" style="font-size:15px"></i> Categories
+                        </a>
+                        <div class="collapse" id="categoryCollapse">
+                            <div class="card card-body category-card-body" id="categoryCollapse">
+                                <div class="form-check form-div">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Tomato
+                                    </label>
+                                    <div class="form-check form-div">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                         Potato
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+              <!-- filter section -->
+        </div>
+        <!-- left section ends -->
+
+
+        <!-- right section -->
+        <div class="col-md-9">
+            <!-- heading -->
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><div class="store-heading">
+                <div class="d-flex "><h2>VEGETABLES</h2>
+                </div>
+                <div class="col-md-4"></div>
+                </div>
+            </div>
+            <!-- heading -->
+
+            <!-- page description -->
+            <div class="row container">
+                <div class="col-md-12"><div class="d-flex ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos voluptatem nam debitis reiciendis adipisci commodi dignissimos officiis nisi cupiditate expedita, in magni temporibus laudantium error ducimus labore enim animi.</p>
+                </div>
+            </div>
+            </div>
+            <!-- page description -->
+
+            <!-- page sorting -->
+            <div class="row col md-12 sort-div d-flex bd-highlight mb-3">
+                    <div class="mr-auto p-2 bd-highlight "><b><p>2255 items found</p></b></div>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                          Sort by
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">What's new</a>
+                          <a class="dropdown-item" href="#">Relevance</a>
+                          <a class="dropdown-item" href="#">Discount</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- page sorting -->
+
+            <!-- items grid -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt="">
+                        <h6 align="center" style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                    </div>
+                    <div class="col-md-4"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
+                    <div class="col-md-4"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- right section ends -->
+
+    </div>
+    <!-- row ends -->
+</div>
+<!-- container ends -->
+
+{% endblock %}
