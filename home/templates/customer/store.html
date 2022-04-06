@@ -26,36 +26,95 @@
         <div class="col-md-3">  
                
               <!-- filter section -->
-                <a data-toggle="collapse" href="#refineCollapse" role="button" aria-expanded="false" aria-controls="refineCollapse">
-                    <h4><i class="fa fa-angle-down" style="font-size:30px"></i> Refine by</h4>
-                </a>
-                <div class="collapse" id="refineCollapse">
-                    <div class="card card-body">
-                        <a data-toggle="collapse" href="#categoryCollapse" role="button" aria-expanded="false" aria-controls="categoryCollapse">
-                            <i class="fa fa-plus" style="font-size:15px"></i> Categories
-                        </a>
-                        <div class="collapse" id="categoryCollapse">
-                            <div class="card card-body category-card-body" id="categoryCollapse">
-                                <div class="form-check form-div">
+              <a data-toggle="collapse" href="#refineCollapse" role="button" aria-expanded="false" aria-controls="refineCollapse">
+                <h4><i class="fa fa-angle-down" style="font-size:30px"></i> Refine by</h4>
+            </a>
+            <!-- class="collapse" id="refineCollapse" -->
+            <div>
+                <div class="card card-body">
+                    <a data-toggle="collapse" href="#categoryCollapse" role="button" aria-expanded="false" aria-controls="categoryCollapse">
+                        <i class="fa fa-plus" style="font-size:15px"></i> Categories
+                    </a>
+                    <div class="collapse" id="categoryCollapse">
+                        <div class="card card-body category-card-body" id="categoryCollapse">
+                            <div class="form-check form-div">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Tomato
+                                </label><br>
+                                <!-- <div class="form-check form-div"> -->
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                     <label class="form-check-label" for="defaultCheck1">
-                                      Tomato
+                                     Potato
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     onion
                                     </label>
-                                    <div class="form-check form-div">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                         Potato
-                                        </label>
-                                    </div>
-                                </div>
+                                <!-- </div> -->
                             </div>
-                          </div>
-                    </div>
-                  </div>
-              <!-- filter section -->
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="card card-body">
+                    <a data-toggle="collapse" href="#quantityCollapse" role="button" aria-expanded="false" aria-controls="categoryCollapse">
+                        <i class="fa fa-plus" style="font-size:15px"></i> Available quantity
+                    </a>
+                    <div class="collapse" id="quantityCollapse">
+                        <div class="card card-body category-card-body" id="quantityCollapse">
+                            <div class="form-check form-div">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  500kg-1000kg
+                                </label><br>
+                                <!-- <div class="form-check form-div"> -->
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     1000kg-2500kg
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     above 2500kg
+                                    </label>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="card card-body">
+                    <a data-toggle="collapse" href="#priceCollapse" role="button" aria-expanded="false" aria-controls="priceCollapse">
+                        <i class="fa fa-plus" style="font-size:15px"></i> Price
+                    </a>
+                    <div class="collapse" id="priceCollapse">
+                        <div class="card card-body category-card-body" id="priceCollapse">
+                            <div class="form-check form-div">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  below Rs.10/kg
+                                </label><br>
+                                <!-- <div class="form-check form-div"> -->
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     Rs.10-Rs.50/kg
+                                    </label><br>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                     above Rs.50/kg
+                                    </label>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+              </div>
+            <!-- filter section -->
         </div>
         <!-- left section ends -->
-
 
         <!-- right section -->
         <div class="col-md-9">
@@ -63,7 +122,8 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4"><div class="store-heading">
-                <div class="d-flex "><h2>VEGETABLES</h2>
+                <div class="d-flex ">
+                    <h2 class="store-heading">VEGETABLES</h2>
                 </div>
                 <div class="col-md-4"></div>
                 </div>
@@ -97,13 +157,22 @@
             <!-- page sorting -->
 
             <!-- items grid -->
-            <div class="container">
+            <div class="container grid-container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt="">
-                        <h6 align="center" style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                        <a href="#"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+                        <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                        <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                        
                     </div>
-                    <div class="col-md-4"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
+                    <div class="col-md-4"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt="">
+                        <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                        <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                    </div>
                     <div class="col-md-4"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
                 </div>
             </div>
@@ -115,5 +184,6 @@
     <!-- row ends -->
 </div>
 <!-- container ends -->
+        
 
 {% endblock %}
