@@ -39,11 +39,13 @@
                   <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Required Qty in kg">
                     <button type="button" class="btn btn-success btn-lg btn-block"><i class="fa fa-truck" style="font-size:20px;color: #ffffff;"></i>&nbspADD TO CONTAINER</button>
-                    <button type="button" class="btn btn-lg btn-block wishlist-btn">&nbspADD TO WISHLISTS</button>
+                    <div class="wishlist-btn-div">
+                        <a href="{% url 'wishlist' %}"><button type="button" class="btn btn-lg btn-block wishlist-btn">&nbspADD TO WISHLISTS</button></a>
+                    </div>
+                    
                   </div>
                 </div>
             </form>
-              
         </div>
     </div>
 </div>
