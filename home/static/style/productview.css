@@ -1,0 +1,42 @@
+.breadcrumb a{
+    color: #afacac;
+    /* font-size: 11px; */
+    text-decoration: none;
+}
+.breadcrumb{
+    background-color: white;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.product-view{
+    width: 473px;
+}
+.product-details h2{
+    color: #b19975;
+    font-family: SourceSansPro;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    text-transform:uppercase
+}
+.product-details h1{
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+.product-details p{
+    text-align: center;
+}
+.min-qty{
+    font-size: 12px;
+    margin: 0px;
+}
+.qty-input-box-div{
+    margin-top: 20px;
+}
+.qty-input-box-div .btn{
+    font-size: small;
+}

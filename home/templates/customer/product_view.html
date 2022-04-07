@@ -1,0 +1,49 @@
+{% extends 'customer/customer_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/productview.css' %}">
+<div class="container breadcrumb-container">
+    <div class="row">
+        <div class="col-md">  
+            <!-- breadcumb   -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb store-breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Vegetables</a></li>
+              <li class="breadcrumb-item"><a href="#">Items</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Items</li>
+            </ol>
+          </nav>
+            <!-- breadcumb   -->
+          <!-- filter section -->
+
+          <!-- filter section -->
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 product-view">
+            <img class="img-fluid" src="{% static 'images/fruits.jpg' %}" alt="">
+        </div>
+        <div class="col-md-6 product-details">
+            <h2>Product name</h2>
+            <h1>product-description</h1>
+            <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+            <p class="min-qty">Available Qty:<span style="color:#28a745 ;">1500kg</span></p>
+            <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+            <p class="min-qty">Shelf life:<span style="color:#28a745 ;">4 days</span></p>
+            <form>
+                <div class="row  d-flex justify-content-center qty-input-box-div">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Required Qty in kg">
+                    <button type="button" class="btn btn-success btn-lg btn-block"><i class="fa fa-truck" style="font-size:20px;color: #ffffff;"></i>&nbspADD TO CONTAINER</button>
+                  </div>
+                </div>
+              </form>
+              
+        </div>
+    </div>
+</div>
+{% endblock %}
