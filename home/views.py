@@ -15,3 +15,6 @@ def forgotpassword(request):
 
 def store(request):
     return render(request,'customer/store.html')
+
+def productview(request):
+    return render(request,'customer/product_view.html')
