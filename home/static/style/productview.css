@@ -51,3 +51,9 @@
     color: #28a745;
     font-size: 15px;
 }
+.wishlist-btn-div{
+    margin-top: 20px;
+}
+.wishlist-btn-div a{
+    text-decoration: none;
+}

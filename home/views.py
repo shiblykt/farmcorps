@@ -18,3 +18,6 @@ def store(request):
 
 def productview(request):
     return render(request,'customer/product_view.html')
+
+def wishlist(request):
+    return render(request,'customer/customer_wishlist.html')

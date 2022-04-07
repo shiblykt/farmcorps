@@ -1,0 +1,33 @@
+{% extends 'customer/customer_master.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><h2 align="center">Your Wishlist</h2></div>
+    </div>
+</div>
+<div class="container grid-container">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="{% url 'productview' %}"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+            <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+            <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+            
+        </div>
+        <div class="col-md-3"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt="">
+            <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+            <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+        </div>
+        <div class="col-md-3"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
+        <div class="col-md-3"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></div>
+    </div>
+</div>
+
+</div>
+
+{% endblock %}
