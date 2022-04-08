@@ -21,3 +21,6 @@ def productview(request):
 
 def wishlist(request):
     return render(request,'customer/customer_wishlist.html')
+
+def checkout(request):
+    return render(request,'customer/customer_checkout.html')
