@@ -1,0 +1,33 @@
+.page-heading h2{
+font-size: 14px;
+font-weight: 700;
+}
+.page-heading h3{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0px;
+    margin:0;
+    margin-top: 2px;
+}
+.qty-details h2{
+font-size: 16px;    
+}
+.qty-update-btn{
+    height: 30px;
+    font-size: small;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+    margin-bottom: 10px;
+}
+.price-tag h3{
+    border-left: 5px solid #176c93;
+    font-size: medium;
+    background-color: #e1ecf1;
+}
+.checkout-view{
+    margin-bottom: 50px;
+}
+.checkout-container{
+   
+}
