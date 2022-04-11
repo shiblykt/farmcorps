@@ -1,14 +1,18 @@
+
 .page-heading h2{
 font-size: 14px;
 font-weight: 700;
 }
 .page-heading h3{
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     text-align: justify;
-    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin:0;
-    margin-top: 2px;
+}
+.qty-update-div a{
+text-decoration: none;
 }
 .qty-details h2{
 font-size: 16px;    
@@ -28,6 +32,19 @@ font-size: 16px;
 .checkout-view{
     margin-bottom: 50px;
 }
-.checkout-container{
+
+/* order total block */
+
+.order-total-heading{
+    background-color: antiquewhite;
    
+}
+.proceed-to-shipping-div a{
+    text-decoration: none;
+}
+.proceed-to-shipping-button{
+    font-size: small;
+}
+a{
+    text-decoration: none;
 }

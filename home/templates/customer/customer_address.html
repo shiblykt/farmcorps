@@ -1,0 +1,72 @@
+{% extends 'customer/customer_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/address.css' %}">
+<!-- page heading -->
+<div class="container">
+    <div class="row page-heading">
+       
+        <div class="col-md-4 heading d-flex justify-content-between">
+            <div><i class="fa fa-map-marker" style="font-size:40px" aria-hidden="true"></i></div>
+            <div><h2>Delivery Address</h2><h4>We will deliver your order to this address</h4></div>
+        </div>
+
+    </div>
+</div>
+<!-- page heading -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+
+            <div class="row d-flex justify-content-between">
+
+                <div class="col-md-6 address-field-div">
+                    <h3>Customer name</h3>
+                    <h3 style="color:#b19975 ;">Default</h3>
+                    <p>Street:  Shop No 1, Shayayog Building, Luis Wadi ,e.exp Highway, Thane (w)
+    
+                        City:   Mumbai
+                        
+                        State/province/area:    Maharashtra
+                        
+                        Phone number  03225829632
+                        
+                        Zip code  400604
+                        
+                        Country calling code  +91
+    
+                        Country  India</p>
+                        <div class="change-address">
+                            <a href="#">Change address</a>
+                        </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="cod-info d-flex justify-content-center"><h3>Cash on delivery available</h3></div>
+                </div>
+
+            </div>
+          
+
+        </div>
+
+         <!-- total amount details -->
+         <div class="row col-md-3">
+    
+            <div class="col-md-12 page-heading page-filler">
+
+                <div class="order-total-heading"><h3>Order Details</h3></div>
+                <div class="d-flex justify-content-between "><h3>Order total:</h3><h3>1500000</h3></div>
+                <div class="d-flex justify-content-between "><h3>Delivery:</h3><h3>FREE</h3></div>
+                <div class="d-flex justify-content-between "><h3>Total Amount:</h3><h3>13000000</h3></div>
+                <div class="proceed-to-shipping-div" ><a href="{% url 'address' %}"><button type="button" class="btn btn-success btn-lg btn-block proceed-to-shipping-button">PROCEED TO PAYMENT</button></a>
+                </div>
+       
+            </div>
+    
+
+        </div>
+        <!-- total amount details -->   
+    </div>
+</div>
+{% endblock %}

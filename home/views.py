@@ -24,3 +24,6 @@ def wishlist(request):
 
 def checkout(request):
     return render(request,'customer/customer_checkout.html')
+
+def address(request):
+    return render(request,'customer/customer_address.html')
