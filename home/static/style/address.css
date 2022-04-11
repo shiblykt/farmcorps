@@ -1,0 +1,60 @@
+.page-heading h2{
+font-size: 18px;
+padding: 0px;
+}
+.page-heading h4{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0px;
+}
+/* order total block */
+
+.order-total-heading{
+    background-color: antiquewhite;
+   
+}
+.proceed-to-shipping-div a{
+    text-decoration: none;
+}
+.proceed-to-shipping-button{
+    font-size: small;
+}
+a{
+    text-decoration: none;
+}
+.page-heading h3{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin:0;
+}
+.address-field-div h3{
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    font-size: 16px;
+}
+.cod-info{
+    border: 1px dashed grey;
+    width: 200px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cod-info h3{
+    font-size: 14px;
+    color: #39b54a;
+    font-weight: 600;
+    padding: 10px;
+}
+.page-filler{
+    margin-bottom: 100px;
+}
+.change-address a{
+    color:#176c93;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .28px
+}
