@@ -1,0 +1,17 @@
+.main-heading h2{
+font-size: 18px;
+font-weight: 700;
+}
+.sub-heading{
+    padding: 10px;
+
+}
+.sub-heading a{
+  text-decoration: none;
+
+}
+
+.sub-heading h2{
+    font-size: 16px;
+    color: grey;
+}

@@ -27,3 +27,9 @@ def checkout(request):
 
 def address(request):
     return render(request,'customer/customer_address.html')
+
+def account(request):
+    return render(request,'customer/customer_account.html')
+
+def profile(request):
+    return render(request,'customer/customer_profile.html')
