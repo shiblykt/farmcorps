@@ -31,5 +31,5 @@ def address(request):
 def account(request):
     return render(request,'customer/customer_account.html')
 
-def profile(request):
-    return render(request,'customer/customer_profile.html')
+def defaultAddress(request):
+    return render(request,'customer/customer_default_address.html')

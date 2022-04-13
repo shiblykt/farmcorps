@@ -48,3 +48,11 @@ font-size: 16px;
 a{
     text-decoration: none;
 }
+.add-to-wishlist-btn{
+    border: 0px solid white ;
+    background-color: none;
+}
+.delete-btn{
+    border: 0px solid white ;
+    background-color: none;
+}

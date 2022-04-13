@@ -1,0 +1,35 @@
+{% extends 'customer/customer_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/defaultAddress.css' %}">
+<div class="container">
+    <div class="row">
+        <!-- left section -->
+        <div class="col-md-3">
+            <div class="col-md-12 main-heading"><h2>My account</h2></div>
+            <div class="sub-heading">
+                <div class="col-md-12"><a href="{% url 'account' %}"><h2>Personal Information</h2></a></div>
+                <div class="col-md-12"><a href="#"><h2>Address Book</h2></a></div>
+            </div>
+            <div class="col-md-12 main-heading"><h2>Orders</h2></div>
+            
+        </div>
+        <!-- left section -->
+        <!-- right section -->
+        <div class="col-md-9">
+            <h2>Address Book</h2>
+            <h6>Save all your addresses for a faster checkout experience.</h6>
+            <div class="row">
+                <div class="col-md-4"><button type="button" class="btn-lg btn-block add-address-btn"><i class="fa fa-map-marker" style="font-size:18px" aria-hidden="true"></i><sup><i class="fa fa-plus" style="font-size:12px"></i></sup>Add New Address</button></div>
+            </div>
+            
+           
+        </div>
+        <!-- right section -->
+
+    </div>
+    <!-- row -->
+</div>
+
+{% endblock %}
+

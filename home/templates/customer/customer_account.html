@@ -5,19 +5,161 @@
 <div class="container">
     <div class="row">
         <!-- left section -->
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="col-md-12 main-heading"><h2>My account</h2></div>
             <div class="sub-heading">
-                <div class="col-md-12"><a href="#"><h2>Personal Information</h2></a></div>
-                <div class="col-md-12"><a href="#"><h2>Address Book</h2></a></div>
+                <div class="col-md-12"><a href="{% url 'account' %}"><h2>Personal Information</h2></a></div>
+                <div class="col-md-12"><a href="{% url 'defaultAddress' %}"><h2>Address Book</h2></a></div>
             </div>
             <div class="col-md-12 main-heading"><h2>Orders</h2></div>
             
         </div>
         <!-- left section -->
         <!-- right section -->
-        <div class="col-md-8">
+        <div class="col-md-9">
+            <h2>Personal Informations</h2>
+            <h6>Hey there! Fill in your details for a personalized FARMCORPS purchasing experience.</h6>
+            <form action="">
+                <!-- change name -->
+                <div class="form-group profile-data">
+                    <label class="profile-label">First Name*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" value="first name">
+                    <label class="profile-label">Last Name*</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1"value="Last name" >
+                </div>
+                <!-- change name -->
+
+                <!-- change email -->
+                <label class="profile-label">Email*</label>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control"  value="name@gmail.com" disabled>
+                    <div class="input-group-append">
+                        <button class="change-btn" type="button" id="button-addon2" data-toggle="modal" data-target="#exampleModalCenter">CHANGE</button>
+                    </div>
+
+                        <!-- modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Enter New Email Address</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">farmPassword</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success btn-lg btn-block">SAVE NEW EMAIL ADDRESS</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <!-- modal -->
+
+                </div>
+             <!-- change email -->
+
+                 <!-- change password -->
+                 <label class="profile-label">Password*</label>
+                 <div class="input-group mb-3">
+                     <input type="password" class="form-control"  value="12345678" disabled>
+                     <div class="input-group-append">
+                         <button class="change-btn" type="button" id="button-addon2" data-toggle="modal" data-target="#passwordChange">CHANGE</button>
+                     </div>
+ 
+                         <!-- modal -->
+                     <div class="modal fade" id="passwordChange" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalCenterTitle">Enter New Password</h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                               </button>
+                             </div>
+                             <div class="modal-body">
+                               <form action="">
+                                
+                                   <div class="form-group">
+                                     <label for="exampleInputPassword1">Enter Password</label>
+                                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                   </div>
+                               </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-success btn-lg btn-block">SAVE NEW PASSWORD</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                         <!-- modal -->
+ 
+                    </div>
+                 <!-- change password -->
+
+
+                    <!-- change phone number -->
+                 <label class="profile-label">Mobile +91*</label>
+                 <div class="input-group mb-3">
+                     <input type="text" class="form-control"  value="12345678" disabled>
+                     <div class="input-group-append">
+                         <button class="change-btn" type="button" id="button-addon2" data-toggle="modal" data-target="#mobileChange">CHANGE</button>
+                     </div>
+ 
+                         <!-- modal -->
+                     <div class="modal fade" id="mobileChange" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalCenterTitle">Enter New Number</h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                               </button>
+                             </div>
+                             <div class="modal-body">
+                               <form action="">
+                                
+                                   <div class="form-group">
+                                     <label for="exampleInputPassword1">Enter Phone Number</label>
+                                     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="phone number">
+                                   </div>
+                               </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-success btn-lg btn-block">SEND OTP FOR VERIFICATION</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                         <!-- modal -->
+ 
+                    </div>
+                    <!-- change phone number -->
+
+                    <div class="container form-control-btn">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-4"><button type="button" class="btn btn-secondary btn-lg btn-block">RESTORE</button></div>
+                            <div class="col-4"><button type="button" class="btn btn-success btn-lg btn-block">UPDATE</button></div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        
+
+                    </div>
+            </form>
             
+           
         </div>
         <!-- right section -->
 
