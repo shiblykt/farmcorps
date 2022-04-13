@@ -15,3 +15,62 @@ font-weight: 700;
     font-size: 16px;
     color: grey;
 }
+.profile-data input[type=text] {
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  border-radius: 0;
+  outline:0px;
+  box-shadow: none;
+}
+.profile-data input[type=text]:hover {
+
+  border-bottom: 2px solid #28a745;
+}
+.profile-label{
+  padding-top: 20px;
+  margin: 0;
+}
+.profile-data input[type=email] {
+  border: none;
+  border-bottom: 2px dotted #c4c4c4;
+  border-radius: 0;
+  outline:0px;
+  box-shadow: none;
+}
+.profile-data input[type=email]:hover {
+
+  border-bottom: 2px solid #28a745;
+}
+.profile-data input[type=password] {
+  border: none;
+  border-bottom: 2px dotted #c4c4c4;
+  border-radius: 0;
+  outline:0px;
+  box-shadow: none;
+
+}
+
+.profile-data input[type=password]:focus {
+
+  background-color: none;
+}
+.profile-data input[type=password]:hover {
+
+  border-bottom: 2px solid #28a745;
+}
+
+.change-btn{
+  background-color: none;
+  border: 0px;
+  font-weight: 800;
+  font-size: 14px;
+  color: #176d93
+}
+.modal .btn{
+  font-size: 14px;
+}
+
+.form-control-btn .btn{
+  font-size: 16px;
+  border-radius: 0px;
+}

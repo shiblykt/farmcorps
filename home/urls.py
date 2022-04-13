@@ -11,7 +11,7 @@ urlpatterns = [
     path('checkout',views.checkout,name='checkout'),
     path('address',views.address,name='address'),
     path('account',views.account,name='account'),
-    path('profile',views.profile,name='profile'),
+    path('address default',views.defaultAddress,name='defaultAddress'),
 
 
 ]
