@@ -18,14 +18,40 @@
     .add-address-btn{
         background-color: transparent;
         color: #28a745;
-        font-size: 18px;
+        font-size: 16px;
         border: 0px;
         box-shadow: none;
+        padding: 0px;
+        margin-top: 80px;
     }
-    .add-address-btn:hover{
-        background-color: transparent;
+    .address-field{
+        background-color: #fff8eb;
+        text-align: justify;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .change-address{
+        margin: 10px;
+    }
+    .default-notification h2{
         color: #28a745;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .cust-address-name{
+        color: #666;
+    }
+    .cust-phone-number{
+        margin-top: 20px;
+    }
+
+    .address-modify{
+        font-size: 14px;
+    }
+    .address-modify button{
+        background-color: transparent;
         border: 0px;
-        box-shadow: none;
+        color: #176d93;
+        font-weight: 600;
+
     }
