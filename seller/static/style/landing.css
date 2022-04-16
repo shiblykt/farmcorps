@@ -1,9 +1,17 @@
 /* login nav */
 .sub-nav-top{
     background-color: white;
+    height: 25px;
 }
 .login-btn-div{
     padding: 10px;
+    margin-top: 10px;
+}
+
+.login-btn{
+    width: 150px;
+    border: 0px;
+    color: #176d93;
 }
 /* login nav */
 
@@ -12,7 +20,7 @@
     background-color:white;
     border-top: 2px solid rgb(212, 208, 208);
     border-bottom: 2px solid rgb(212, 208, 208);
-    box-shadow: 5px 10px 8px #525252;
+    box-shadow: 5px 10px 8px #a8a8a8;
     height: 100px;
     margin-top: 50px;
 }
@@ -104,10 +112,13 @@ padding: 10px;
     padding-top: 10px;
     padding-bottom:10px;
 }
-.link-grid a{
+.grid-item a{
 color: black;
 }
+
+.grid-item a:hover{
+    color: black;
+    }
 .col-md-4:hover{
     opacity: 0.8;
 }
-
