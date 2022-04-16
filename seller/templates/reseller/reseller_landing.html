@@ -12,11 +12,105 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid">
+    
+    <!-- sub-nav with login button -->
+    <div class="container-fluid fixed-top sub-nav-top">
         <div class="row">
+            <div class="col-4">
+            </div>
             <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-end">
+                <div class="login-btn-div"><button class="login-btn">seller Login</button></div>
+            </div>
         </div>
     </div>
+    <!-- sub-nav with login button -->
+
+    <!-- navbar with logo -->
+    <div class="container-fluid sticky-nav fixed-top">
+        <div class="row">
+            <div class="col-4">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo">
+                </a>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-end">
+                <div class="registration-btn-div"><button class="registration-btn">start selling</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar with logo -->
+
+    <!-- banner section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 banner-img-container ">
+                
+                    <div class="row banner-text">
+                        <div class="col-12"><div class="banner-text"><h1>Become a Seller On </h1><h1>Farmcorps</h1></div></div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- banner section -->
+    <!-- heading section -->
+    <div class="container-fluid grid-heading">
+        <div class="row">
+            <div class="col-12">
+                <h1>
+                    Need more information about selling on Farmcorps?
+                </h1>
+                <h6>Learn more by clicking on any of the links below</h6>
+            </div>
+        </div>
+    </div>
+    <!-- heading section -->
+
+    <!-- grid section -->
+    <div class="container link-grid">
+        <div class="row">
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/seller.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Become a farmcorps seller</h4></a></div>
+                <div><a href=""><h6>Make your products available to crores of customers & buisness 24x7</h6></a></div>
+            </div>
+
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/requirements.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Requirements to sell</h4></a></div>
+                <div><a href=""><h6>GST/PAN information of your buisness and an active bank account is all you need to sell on farmcorps</h6></a></div>
+            </div>
+
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/addproduct.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Adding products to farmcorps</h4></a></div>
+                <div><a href=""><h6>Explore the various categories of stores where can be add your products with out any efforts</h6></a></div>
+            </div>
+
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/delivery.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Delivering your product</h4></a></div>
+                <div><a href=""><h6>You can use either farmcorps logistics assistance for delivering products or you can use your own delivery</h6></a></div>
+            </div>
+
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/payment.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Get paid for your sales</h4></a></div>
+                <div><a href=""><h6>farmcorps ensures your payments are deposited directly in your bank account within 7-14 days.</h6></a></div>
+            </div>
+
+            <div class="col-md-4 grid-item">
+                <div><a href=""><img src="{% static 'images/benefit.svg' %}" alt=""></a></div>
+                <div><a href=""><h4>Benefits of selling on farcorps</h4></a></div>
+                <div><a href=""><h6>Sell your farm products on farmcorps platform which is focused on pipelining of farming products only.</h6></a></div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- grid section -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
