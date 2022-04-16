@@ -1,0 +1,113 @@
+/* login nav */
+.sub-nav-top{
+    background-color: white;
+}
+.login-btn-div{
+    padding: 10px;
+}
+/* login nav */
+
+/* main navigation to registration */
+.sticky-nav{
+    background-color:white;
+    border-top: 2px solid rgb(212, 208, 208);
+    border-bottom: 2px solid rgb(212, 208, 208);
+    box-shadow: 5px 10px 8px #525252;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.registration-btn-div{
+margin-top: 10px;
+padding: 10px;
+}
+.registration-btn{
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 2px solid #f90;
+   background-color: #f90;
+}
+/* main navigation to registration */
+
+/* banner styling */
+.banner-img-container{
+    background-image: url('/static/images/fruits.jpg');
+     width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 5px 10px 8px #525252;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.banner-text{
+    text-align: justify;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.banner-text h1{
+    font-size: 48px;
+    line-height: 58px
+}
+/* banner styling */
+
+.grid-heading h1{
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 50px;
+    font-weight: 700;
+}
+.grid-heading h6{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 50px;
+   
+}
+.grid-item{
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px 5px #d7ecee;
+    padding-bottom: 50px;
+}
+.link-grid{
+    margin-top: 20px;
+    
+}
+.link-grid img{
+    height: 44px;
+}
+.grid-item h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.grid-item h6{
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.link-grid a{
+color: black;
+}
+.col-md-4:hover{
+    opacity: 0.8;
+}
+
