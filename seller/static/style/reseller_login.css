@@ -1,0 +1,31 @@
+.logo-container-div{
+    margin-top: 40px;
+}
+.customer-signup-form-div{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.create-new-account-btn{
+    background-color: black;
+    color: white;
+}
+.create-new-account-btn:hover{
+    background-color:#4CAF50 ;
+    color: black;
+    
+}
+label{
+    color: black;
+}
+.seller-heading{
+margin-top: 20px;
+font-size: 21px;
+font-weight: 700;
+line-height: 21px;
+color: darkslategray;
+}
+.form-title-div h2{
+    padding: 0;
+    margin-bottom: 20px;
+}
