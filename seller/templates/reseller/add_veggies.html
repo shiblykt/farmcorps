@@ -1,0 +1,111 @@
+{% extends 'reseller/reseller_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/add_product.css' %}">
+<div class="container form-container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+                <div class="form-heading d-flex justify-content-center">
+                    <h2>Add To Vegetables</h2>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputFarmName" class="col-sm-3 col-form-label">Farm Name:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputFarmName" value="Farm name">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputProductName" class="col-sm-3 col-form-label">Product Name:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputProductName">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputImage" class="col-sm-3 col-form-label">Product Image:</label>
+                                    <div class="col-sm-6">
+                                        <input type="file" class="form-control" id="inputImage">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group row">
+                                    <label for="inputProductDescription" class="col-sm-3 col-form-label">Product Description:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputProductDescription">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputAvailableQty" class="col-sm-3 col-form-label">Available Quantity:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputAvailableQty" placeholder=" in Kg">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputMinQty" class="col-sm-3 col-form-label">Minimum Quantity:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputMinQty" placeholder=" in Kg">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                    <label for="inputShelfLife" class="col-sm-3 col-form-label">Shelf Life:</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputShelfLife">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center add-btn-div">
+                        <div class="col-md-4"><button type="button" class="btn btn-lg btn-block">Add Product</button></div>
+                    </div>
+                </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+
+{% endblock %}

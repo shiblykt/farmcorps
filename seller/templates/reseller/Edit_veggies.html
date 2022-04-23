@@ -1,0 +1,573 @@
+{% extends 'reseller/reseller_master.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'style/edit_product.css' %}">
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="edit-page-heading"><h2>Edit Vegetable Products</h2></div>
+    </div>
+</div>
+<!-- items grid -->
+<div class="container grid-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="grid-item"><a href="{% url 'productview' %}"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+                <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                <div class="modify-btn-div d-flex justify-content-between">
+                    <div><button type="button" class="btn btn-sm"><i class="fa fa-trash-o" style="font-size:24px"></i>&nbspDelete</button></div>
+                    <div>
+                        <button class="btn btn-sm" type="button" id="button-addon2" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-edit"></i>&nbsp Edit</button>
+                    </div>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl " role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Edit Vegetable Products</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: black;">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputFarmName" class="col-sm-3 col-form-label">Farm Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputFarmName" value="Farm name">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductName" class="col-sm-3 col-form-label">Product Name:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductName">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputImage" class="col-sm-3 col-form-label">Product Image:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="file" class="form-control" id="inputImage">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductDescription" class="col-sm-3 col-form-label">Product Description:</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputProductDescription">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price Old:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price New:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputAvailableQty" class="col-sm-3 col-form-label">Available Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputAvailableQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputMinQty" class="col-sm-3 col-form-label">Minimum Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputMinQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputShelfLife" class="col-sm-3 col-form-label">Shelf Life:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputShelfLife">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-12"><button type="button" class="btn btn-lg btn-block">Update Product</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="grid-item"><a href="{% url 'productview' %}"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+                <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                <div class="modify-btn-div d-flex justify-content-between">
+                    <div><button type="button" class="btn btn-sm"><i class="fa fa-trash-o" style="font-size:24px"></i>&nbspDelete</button></div>
+                    <div>
+                        <button class="btn btn-sm" type="button" id="button-addon2" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-edit"></i>&nbsp Edit</button>
+                    </div>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl " role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Edit Vegetable Products</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: black;">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputFarmName" class="col-sm-3 col-form-label">Farm Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputFarmName" value="Farm name">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductName" class="col-sm-3 col-form-label">Product Name:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductName">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputImage" class="col-sm-3 col-form-label">Product Image:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="file" class="form-control" id="inputImage">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductDescription" class="col-sm-3 col-form-label">Product Description:</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputProductDescription">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price Old:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price New:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputAvailableQty" class="col-sm-3 col-form-label">Available Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputAvailableQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputMinQty" class="col-sm-3 col-form-label">Minimum Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputMinQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputShelfLife" class="col-sm-3 col-form-label">Shelf Life:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputShelfLife">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-12"><button type="button" class="btn btn-lg btn-block">Update Product</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="grid-item"><a href="{% url 'productview' %}"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+                <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                <div class="modify-btn-div d-flex justify-content-between">
+                    <div><button type="button" class="btn btn-sm"><i class="fa fa-trash-o" style="font-size:24px"></i>&nbspDelete</button></div>
+                    <div>
+                        <button class="btn btn-sm" type="button" id="button-addon2" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-edit"></i>&nbsp Edit</button>
+                    </div>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl " role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Edit Vegetable Products</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: black;">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputFarmName" class="col-sm-3 col-form-label">Farm Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputFarmName" value="Farm name">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductName" class="col-sm-3 col-form-label">Product Name:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductName">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputImage" class="col-sm-3 col-form-label">Product Image:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="file" class="form-control" id="inputImage">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductDescription" class="col-sm-3 col-form-label">Product Description:</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputProductDescription">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price Old:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price New:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputAvailableQty" class="col-sm-3 col-form-label">Available Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputAvailableQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputMinQty" class="col-sm-3 col-form-label">Minimum Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputMinQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputShelfLife" class="col-sm-3 col-form-label">Shelf Life:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputShelfLife">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-12"><button type="button" class="btn btn-lg btn-block">Update Product</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="grid-item"><a href="{% url 'productview' %}"><img class="img-fluid" src="{% static 'images/vegetables.jpg' %}" alt=""></a>
+                <h6 style="color: #b19975;font-family:SourceSansPro;">TOMATO</h6>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><b>Price per kg:</b> &#x20b9;18 <span style="text-decoration: line-through;color: gray;"> 25</span></p>
+                <p class="min-qty">Min Qty:<span style="color:#28a745 ;">500kg</span></p>
+                <div class="modify-btn-div d-flex justify-content-between">
+                    <div><button type="button" class="btn btn-sm"><i class="fa fa-trash-o" style="font-size:24px"></i>&nbspDelete</button></div>
+                    <div>
+                        <button class="btn btn-sm" type="button" id="button-addon2" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-edit"></i>&nbsp Edit</button>
+                    </div>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl " role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Edit Vegetable Products</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="color: black;">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputFarmName" class="col-sm-3 col-form-label">Farm Name:</label>
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="form-control" id="inputFarmName" value="Farm name">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductName" class="col-sm-3 col-form-label">Product Name:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductName">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputImage" class="col-sm-3 col-form-label">Product Image:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="file" class="form-control" id="inputImage">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductDescription" class="col-sm-3 col-form-label">Product Description:</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputProductDescription">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price Old:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputProductPrice" class="col-sm-3 col-form-label">Product Price New:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputProductPrice" placeholder=" /Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputAvailableQty" class="col-sm-3 col-form-label">Available Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputAvailableQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputMinQty" class="col-sm-3 col-form-label">Minimum Quantity:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputMinQty" placeholder=" in Kg">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group row">
+                                                    <label for="inputShelfLife" class="col-sm-3 col-form-label">Shelf Life:</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="inputShelfLife">
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="col-md-12"><button type="button" class="btn btn-lg btn-block">Update Product</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- modal -->
+
+                    </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+</div>
+
+</div>
+
+{% endblock %}

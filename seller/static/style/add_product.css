@@ -1,0 +1,31 @@
+.form-container{
+     margin-top: 100px;
+}
+.form-heading h2{
+    font-size: 44px;
+    font-weight:500;
+}
+.form-heading{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+label{
+    font-weight: 700;
+}
+.add-btn-div{
+    margin-bottom: 20px;
+}
+.add-btn-div button{
+    font-size: 16px;
+    border-radius: 0px;
+    background-color:  rgb(36, 67, 71);
+    color: white;
+    box-shadow: none;
+}
+.add-btn-div button:hover{
+    background-color:  rgb(36, 67, 71);
+    color: white;
+}
+.add-btn-div button:focus{
+    box-shadow: none;
+}

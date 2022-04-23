@@ -15,3 +15,12 @@ def bankInfo(request):
 
 def buisnessInfo(request):
     return render(request,'reseller/reseller_buisnessInfo.html')
+
+def home(request):
+    return render(request,'reseller/reseller_home.html')
+
+def addVeg(request):
+    return render(request,'reseller/add_veggies.html')
+
+def editVeg(request):
+    return render(request,'reseller/edit_veggies.html')
