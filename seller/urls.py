@@ -9,6 +9,7 @@ urlpatterns = [
     path('home',views.home,name='sellerHome'),
     path('add/vegetables',views.addVeg,name='addVeg'),
     path('edit/vegetables',views.editVeg,name='editVeg'),
-
+    path('orders',views.newOrders,name='newOrders'),
+     path('shipment',views.shipment,name='shipment'),
 
 ]

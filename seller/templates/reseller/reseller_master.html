@@ -53,8 +53,20 @@
               <a href="#">Edit Medicinal Herbs</a>
             </div>
             </div>
-            <a href="#">Orders</a>
-            <a href="#">Contact</a>
+
+            <div class="dropdown-add-product">
+              <div><a href="">Orders</a></div>
+            
+              <div class="dropdown-content-add-product">
+              <a href="{% url 'newOrders' %}">Confirm Order</a>
+              <a href="#">Edit Fruits</a>
+              <a href="#">Edit Spices</a>
+              <a href="#">Edit Flowers</a>
+              
+            </div>
+            </div>
+            <a href="{% url 'shipment' %}">Shipment</a>
+            
           </div>
           <!-- sidenav contents -->
 
@@ -96,7 +108,7 @@
                             <div><i class="fa fa-gear dropbtn" style="font-size:24px;color: white;padding-top: 10px;"></i></div>
                           <div class="dropdown-content">
                             <a href="#">Account Info</a>
-                            <a href="#">Your Orders</a>
+                            <a href="#">Sales History</a>
                             <a href="#">Your Suggestions</a>
                             <a href="#">Your Wishlists</a>
                             <a href="#">Log Out</a>
