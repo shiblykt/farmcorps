@@ -24,3 +24,9 @@ def addVeg(request):
 
 def editVeg(request):
     return render(request,'reseller/edit_veggies.html')
+
+def newOrders(request):
+    return render(request,'reseller/reseller_manage_order.html')
+
+def shipment(request):
+    return render(request,'reseller/shipment_mode.html')

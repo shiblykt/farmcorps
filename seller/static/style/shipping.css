@@ -1,0 +1,38 @@
+.page-heading{
+margin-top: 100px;
+}
+.detail-row{
+    margin-top: 50px;
+}
+.faq-div h4{
+margin-bottom: 25px;
+}
+.faq-div h6{
+    margin-bottom: 20px;
+}
+.sub-heading{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.check-btn{
+    font-size: 16px;
+    border-radius: 0px;
+    color: white;
+    border: 0px;
+    background-color: rgb(0 47 54);
+    font-weight: 700;
+  }
+  .border-div{
+      padding: 20px;
+      border: 1px solid black ;
+      margin-top: 50px;
+      margin-bottom: 10px;
+  }
+  .border-div label{
+      font-weight: 700;
+  }
+  .select-button-div button{
+      background-color: rgb(0 47 54);
+      color: white;
+  }
