@@ -1,0 +1,96 @@
+/* main navigation to registration */
+.sticky-nav{
+    background-color:white;
+    border-top: 2px solid rgb(212, 208, 208);
+    border-bottom: 2px solid rgb(212, 208, 208);
+    height: 100px;
+    margin-top: 0px;
+}
+
+.registration-btn-div{
+margin-top: 10px;
+padding: 10px;
+}
+.registration-btn{
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   border: 2px solid #f90;
+   background-color: #f90;
+}
+/* main navigation to registration */
+
+
+.banner-text{
+    text-align: justify;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.banner-text h1{
+    font-size: 48px;
+    line-height: 58px
+}
+/* banner styling */
+.video-container{
+    margin-top: 75px;
+}
+
+.video-container::before{
+    content: 'Join FarmCorps Logistics,\a India\'s  Trusted Food Supply\a Chain Management Network';
+    position: absolute;
+    color: rgb(255, 255, 255);
+    z-index: 0;
+    font-size: 60px;
+    font-weight: 700;
+    white-space:pre-line;
+    text-transform: uppercase;
+    top: 60%;
+    left: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .video-container::before {
+        font-size: 20px;
+        top: 25%;
+        left: 5%;
+    }
+  }
+  .heading-container{
+      margin-top: 50px;
+  }
+
+  .heading-container h2{
+    font-size: 44px;
+    color: green;
+    font-weight: 700;
+}
+.col-md-3{
+    border: 1px solid rgb(212, 208, 208);
+    background-color: #e7e7e7;
+    box-shadow: 5px 10px 8px #888888; 
+}
+.one{
+    width: 60px;
+    height: 60px;
+    border: 3px solid green;
+    border-radius: 50%;
+    position: relative;
+}
+.one::after{
+    content: '1';
+    position: absolute;
+    z-index: 11;
+    font-size: 18px;
+    color: green;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

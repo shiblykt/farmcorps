@@ -17,7 +17,7 @@
     <div class="container-fluid logo-container-div">
         <div class="row">
             <div class="col-12 d-flex justify-content-center container-fluid">
-                <a href="{% url 'landing' %}"><img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo"></a><h2 class="seller-heading">Seller</h2>
+                <a href="{% url 'logisticsLanding' %}"><img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo"></a><h2 class="seller-heading">Logistics</h2>
             </div>
         </div>
     </div>
@@ -29,17 +29,17 @@
             <div class="col-md-6">
                 <form action="">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Farm Name</label>
+                        <label for="exampleInputEmail1">Transport Name</label>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" >
                             <div class="input-group-append">
                               <button class="btn btn-outline-secondary" type="button" id="button-addon2">Check</button>
                             </div>
                           </div>
-                        <small id="emailHelp" class="form-text text-muted">Choose a farm name for identifying your farm from various other farms easily.</small>
+                        <small id="emailHelp" class="form-text text-muted">Choose a transport name for identifying your farm from various other farms easily.</small>
                       </div>
                       <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Farm Address</label>
+                        <label for="exampleFormControlTextarea1">Buisness Address</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                       </div>
                       <div class="form-row">
@@ -60,29 +60,13 @@
                         </div>
                       </div>
 
-                      <div class="form-check">
-                        <label for="chkOptions">
-                            <input type="checkbox" id="chkOptions" onclick="ShowHideDiv(this)" name="chkShipment" />
-                            Farmcorps Easy shipping
-                        </label>
-                        
-                      </div>
+                      
 
-                      <div class="divEasyShip" id="dvEasyShip" style="display: none">
-                          <label for="checkPin">Enter your Pick Up PIN:</label>
-                          <input type="text" id="checkPin" />
-                      </div>
-
-                      <div class="form-check">
-                        <label for="chkOptions">
-                            <input type="checkbox" name="chkShipment" />
-                            Ship Using your own courier
-                        </label>
-                      </div>
+                     
                       
                       
                       
-                      <div class="d-flex justify-content-center"><a href="{% url 'sellerHome' %}" class="btn btn-success">Next</a></div>
+                      <div class="d-flex justify-content-center"><a href="{% url 'logisticsHome' %}" class="btn btn-success">Finish</a></div>
                 </form>
             </div>
             <div class="col-md-3"></div>

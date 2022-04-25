@@ -1,26 +1,24 @@
-{% extends 'reseller/reseller_master.html' %}
+{% extends 'logistic/logistics_master.html' %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'style/reseller_home.css' %}">
+<link rel="stylesheet" href="{% static 'style/logistics_home.css' %}">
 <div class="container analytics-container">
     <div class="row">
         <div class="col-md-4 analytics-container-item gap">
-            <div class="d-flex justify-content-center"><h2>total Amount Recieved</h2></div>
-            <div class="d-flex justify-content-center"><h1>100000000000000</h1></div>
+            <div class="d-flex justify-content-center"><h2>total Requests</h2></div>
+            <div class="d-flex justify-content-center"><h1>100000</h1></div>
         </div>
 
         <div class="col-md-3 analytics-container-item gap">
-            <div class="d-flex justify-content-center"><h2>total orders</h2></div>
+            <div class="d-flex justify-content-center"><h2>total Deliveries</h2></div>
             <div class="d-flex justify-content-center"><h1>10000000000</h1></div>
         </div>
 
         <div class="col-md-4 analytics-container-item gap">
-            <div class="d-flex justify-content-center"><h2>total Qty Sold</h2></div>
+            <div class="d-flex justify-content-center"><h2>total Amount Recieved</h2></div>
             <div class="d-flex justify-content-center"><h1>100000000000000</h1></div>
         </div>
         
     </div>
 </div>
-
-
 {% endblock %}
