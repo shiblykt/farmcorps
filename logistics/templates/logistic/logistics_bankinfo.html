@@ -17,7 +17,7 @@
     <div class="container-fluid logo-container-div">
         <div class="row">
             <div class="col-12 d-flex justify-content-center container-fluid">
-                <a href="{% url 'landing' %}"><img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo"></a><h2 class="seller-heading">Seller</h2>
+                <a href="{% url 'logisticsLanding' %}"><img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo"></a><h2 class="seller-heading">Logistics</h2>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
                         <label for="exampleInputEmail1">Bank IFSC Code</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       </div>
-                      <div class="d-flex justify-content-center"><a href="{% url 'buisnessInfo' %}" class="btn btn-success">Next</a></div>
+                      <div class="d-flex justify-content-center"><a href="{% url 'buisnessDetails' %}" class="btn btn-success" href="{% url 'buisnessInfo' %}">Next</a></div>
                 </form>
             </div>
             <div class="col-2"></div>

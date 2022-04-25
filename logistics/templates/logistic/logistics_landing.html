@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'style/logistics_landing.css' %}">
+    <title>FarmCorps logistics</title>
+</head>
+<body>
+    <!-- navbar with logo -->
+    <div class="container-fluid sticky-nav fixed-top">
+        <div class="row">
+            <div class="col-4">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo">
+                </a>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-end">
+                <div class="registration-btn-div"><a href="{% url 'logisticsLogin' %}"><button class="registration-btn">Log In</button></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar with logo -->
+
+    <!-- video background -->
+    <div class="video-container">
+            <video id="video" width="100%" height="100%" autoplay="" muted="" loop="" onclick="playPause()">
+                <source src="{% static 'assets/video.mp4' %}" type="video/mp4" />
+            </video>
+    </div>
+     <!-- video background -->
+        
+   <!-- heading -->
+    <div class="container heading-container">
+        <div class="row d-flex justify-content-center">
+            <div><h2>How It Works?</h2></div>
+        </div>
+    </div>
+    <!-- heading -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script>
+       function playPause() {
+        var video = document.querySelector("video");
+        if (video.paused)
+            video.play(); 
+        else 
+            video.pause();
+        }
+    </script>
+        
+</body>
+</html>

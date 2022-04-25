@@ -1,0 +1,16 @@
+.footer{
+    background-color:#555D50;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.2px solid gray;
+    margin-top: 200px;
+}
+.footer h2{
+    color: rgb(255, 255, 255);
+}
+.footer a{
+    color: rgb(255, 255, 255);
+}
+.copyright-div{
+    border-top: 0.2px solid gray;
+    border-bottom: 0.2px solid gray;
+}

@@ -4,7 +4,7 @@ from django.shortcuts import render
 def landing(request):
     return render(request,'reseller/reseller_landing.html')
 
-def login(request):
+def sellerLogin(request):
     return render(request,'reseller/reseller_login.html')
 
 def registration(request):
@@ -30,3 +30,4 @@ def newOrders(request):
 
 def shipment(request):
     return render(request,'reseller/shipment_mode.html')
+
