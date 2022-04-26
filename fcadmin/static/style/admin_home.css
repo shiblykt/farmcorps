@@ -1,0 +1,18 @@
+.analytics-container{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.gap{
+    margin: 10px;
+}
+.analytics-container-item{
+    border: 1px solid #c4c4c4;
+    padding: 30px;
+}
+.analytics-container-item h2{
+    font-size: 30px;
+}
+.analytics-container-item h1{
+   font-size: 44px;
+   font-family:Arial, Helvetica, sans-serif;
+}
