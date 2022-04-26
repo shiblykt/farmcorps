@@ -17,3 +17,6 @@ def buisnessDetails(request):
 
 def home(request):
     return render(request,'logistic/logistics_home.html')
+
+def manageRequests(request):
+    return render(request,'logistic/manage_requests.html')
