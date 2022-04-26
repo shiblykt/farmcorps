@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(0 47 54);
+    color:white
+}
+.logo-container-div{
+    margin-top: 200px;
+}
+.admin-heading{
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    color: darkslategray;
+    }
+.btn{
+    background-color: rgba(0,130,150,.6);
+    color: white;
+}
+.btn:hover{
+    background-color: rgba(10, 177, 202, 0.6);
+    color: white;
+}

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'seller',
     'logistics',
+    'fcadmin',
 ]
 
 MIDDLEWARE = [
