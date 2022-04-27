@@ -58,29 +58,7 @@
                           <label for="inputZip">PIN</label>
                           <input type="text" class="form-control" id="inputZip">
                         </div>
-                      </div>
-
-                      <div class="form-check">
-                        <label for="chkOptions">
-                            <input type="checkbox" id="chkOptions" onclick="ShowHideDiv(this)" name="chkShipment" />
-                            Farmcorps Easy shipping
-                        </label>
-                        
-                      </div>
-
-                      <div class="divEasyShip" id="dvEasyShip" style="display: none">
-                          <label for="checkPin">Enter your Pick Up PIN:</label>
-                          <input type="text" id="checkPin" />
-                      </div>
-
-                      <div class="form-check">
-                        <label for="chkOptions">
-                            <input type="checkbox" name="chkShipment" />
-                            Ship Using your own courier
-                        </label>
-                      </div>
-                      
-                      
+                      </div> 
                       
                       <div class="d-flex justify-content-center"><a href="{% url 'sellerHome' %}" class="btn btn-success">Next</a></div>
                 </form>
@@ -89,15 +67,5 @@
         </div>
     </div>
      
-    <script type="text/javascript">
-        function ShowHideDiv(chkOptions) {
-            var dvEasyShip = document.getElementById("dvEasyShip");
-            dvEasyShip.style.display = chkOptions.checked ? "block" : "none";
-            document.getElementById('dvEasyShip').style.border="1px solid green"
-            document.getElementById('dvEasyShip').style.padding="20px"
-            document.getElementById('dvEasyShip').style.marginBottom="50px"
-            
-        }
-    </script>
 </body>
 </html> 
