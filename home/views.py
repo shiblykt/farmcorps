@@ -4,7 +4,7 @@ from django.shortcuts import render
 def index(request):
     return render(request,'customer/customer_home.html')
 
-def signup(request):
+def customerSignup(request):
     return render(request,'customer/customer_signup.html')
 
 def signin(request):
