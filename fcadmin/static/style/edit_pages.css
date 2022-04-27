@@ -1,0 +1,36 @@
+.change-content-div{
+    margin-top: 100px;
+}
+.change-content-div h2{
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.change-content-div h4{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.change-content-div label{
+    font-weight: 700;
+    padding-top: 0px;
+}
+.change-credentials{
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+.change-btn{
+    background-color: none;
+    border: 0px;
+    font-weight: 800;
+    font-size: 14px;
+    color: #176d93;
+  }
+  .modal .btn{
+    font-size: 14px;
+    background-color:rgb(0 47 54);
+  }
+  
+  .form-control-btn .btn{
+    font-size: 16px;
+    border-radius: 0px;
+  }
