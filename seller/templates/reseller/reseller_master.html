@@ -20,7 +20,6 @@
             <div class="sidenav-head">
               <div><a href="{% url 'landing' %}"><img src="{% static 'images/logo.png' %}" width="150" height="50" alt="farmcorps logo"></a>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white;">&times;</a></div>
-              
             </div>
             <div class="dropdown-add-product">
               <div><a href="#">Add Product</a></div>
@@ -59,9 +58,6 @@
             
               <div class="dropdown-content-add-product">
               <a href="{% url 'newOrders' %}">Confirm Order</a>
-              <a href="#">Edit Fruits</a>
-              <a href="#">Edit Spices</a>
-              <a href="#">Edit Flowers</a>
               
             </div>
             </div>
@@ -92,7 +88,7 @@
                 <div class="input-group">
                     <input type="text" name="searchdata" class="form-control" placeholder="Search">
                     <span class="input-group-append">
-                    <button class="btn btn-secondary  searh-btn" type="submit" id="srch">
+                    <button class="btn btn-secondary  searh-btn" type="">
                         <i class="fa fa-search "></i>
                     </button>
                     </span>

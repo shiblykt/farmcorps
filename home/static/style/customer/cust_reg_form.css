@@ -1,11 +1,11 @@
 body{
-    background-color: #121212;
+    background-color: #000000;
 }
 .logo-container-div{
     margin-bottom: 50px;
 }
 .customer-signup-form-div{
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 50px;
 }
 
@@ -17,4 +17,10 @@ body{
     background-color: white;
     color: black
     
+}
+input[type=text]{
+    border: 0px;
+}
+input[type=text]:focus{
+    box-shadow: none;
 }
